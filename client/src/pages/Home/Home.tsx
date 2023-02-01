@@ -1,7 +1,6 @@
 import React, { FC, useEffect, useMemo } from 'react';
 import styles from './Home.module.scss';
 import { Skeleton } from 'primereact/skeleton';
-import { ScrollPanel } from 'primereact/scrollpanel';
 import { Table } from '@components/Table';
 import { useDispatch, useSelector } from 'react-redux';
 import {
@@ -44,9 +43,12 @@ export const Home: FC<HomeProps> = () => {
       {loading ? (
         <Skeleton className={styles.skeleton} />
       ) : (
-        <ScrollPanel className={styles.scroll}>
-          <Table columns={columns} data={data} className={styles.table} />
-        </ScrollPanel>
+        <Table
+          columns={columns}
+          paginator
+          data={data}
+          className={styles.table}
+        />
       )}
     </div>
   );

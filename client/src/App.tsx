@@ -6,7 +6,7 @@ import './App.module.scss';
 import { Home } from '@pages/Home';
 import 'primereact/resources/themes/lara-light-indigo/theme.css';
 import 'primereact/resources/primereact.min.css';
-// import 'primeicons/primeicons.css'; //icons
+import 'primeicons/primeicons.css'; //icons
 
 export const history = createBrowserHistory();
 
