@@ -1,0 +1,18 @@
+.root {
+  width: 100%;
+  padding: 40px 20px 20px;
+
+  .scroll {
+    height: calc(100vh - 140px);
+    :global {
+      .p-scrollpanel-bar.p-scrollpanel-bar-y {
+        background: rgb(126, 126, 126);
+      }
+    }
+  }
+
+  .skeleton {
+    height: calc(100vh - 140px) !important;
+    width: 100% !important;
+  }
+}
