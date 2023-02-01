@@ -37,6 +37,7 @@ export const Table: FC<TableProps> = ({
         ${i.field}`}
           header={i.header}
           field={i.field}
+          {...i}
         ></Column>
       ))}
     </DataTable>

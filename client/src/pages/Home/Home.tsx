@@ -25,14 +25,17 @@ export const Home: FC<HomeProps> = () => {
       {
         header: 'Дата',
         field: 'date',
+        sortable: true,
       },
       {
         header: 'Добыча нефти, т/сут',
         field: 'petroleum',
+        sortable: true,
       },
       {
         header: 'Добыча жидкости, м3/сут',
         field: 'liquid',
+        sortable: true,
       },
     ],
     [],
@@ -46,6 +49,7 @@ export const Home: FC<HomeProps> = () => {
         <Table
           columns={columns}
           paginator
+          removableSort
           data={data}
           className={styles.table}
         />
